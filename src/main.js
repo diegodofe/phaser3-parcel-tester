@@ -2,6 +2,7 @@ import Phaser from 'phaser'
 
 import Preloader from './scenes/Preloader'
 import Game from './scenes/Game'
+import UIScene from './scenes/UIScene'
 
 const config = {
 	type: Phaser.AUTO,
@@ -14,7 +15,7 @@ const config = {
 			gravity: { y: 0 }
 		}
 	},
-	scene: [Preloader, Game]
+	scene: [Preloader, Game, UIScene]
 }
 
 export default new Phaser.Game(config)
