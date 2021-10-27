@@ -10,6 +10,7 @@ export default class Game extends Phaser.Scene
 
 	create()
 	{
+		// Game scene will call multiple scenes:
 		this.scene.launch('uiscene')
 	}
 }

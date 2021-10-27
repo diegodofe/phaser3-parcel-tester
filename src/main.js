@@ -1,5 +1,7 @@
 import Phaser from 'phaser'
 
+import {Plugin as NineSlicePlugin} from 'phaser3-nineslice'
+
 import Preloader from './scenes/Preloader'
 import Game from './scenes/Game'
 import UIScene from './scenes/UIScene'
@@ -14,6 +16,9 @@ const config = {
 			debug: true,
 			gravity: { y: 0 }
 		}
+	},
+	plugins: {
+		global: [ NineSlicePlugin.DefaultCfg ]
 	},
 	scene: [Preloader, Game, UIScene]
 }
