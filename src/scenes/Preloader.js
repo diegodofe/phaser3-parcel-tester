@@ -18,6 +18,6 @@ export default class Preloader extends Phaser.Scene
 
 	create()
 	{
-		this.scene.start('game') // Call main game scene.
+		this.scene.start('MainScene') // Calls main game scene.
 	}
 }

@@ -3,7 +3,7 @@ import Phaser from 'phaser'
 import {Plugin as NineSlicePlugin} from 'phaser3-nineslice'
 
 import Preloader from './scenes/Preloader'
-import Game from './scenes/Game'
+import MainScene from './scenes/MainScene'
 import UIScene from './scenes/UIScene'
 
 const config = {
@@ -20,7 +20,7 @@ const config = {
 	plugins: {
 		global: [ NineSlicePlugin.DefaultCfg ]
 	},
-	scene: [Preloader, Game, UIScene]
+	scene: [Preloader, MainScene, UIScene]
 }
 
 export default new Phaser.Game(config)
