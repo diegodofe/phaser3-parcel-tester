@@ -29,11 +29,13 @@ export default class SettingsScene extends Phaser.Scene
         })
         .on('pointerup', function () {
             this.clearTint()
+            
             if (settingsMenu.isOpen){
                 settingsMenu.hide();
             }else{
                 settingsMenu.show();
             }
+            
         });
     }
 }
