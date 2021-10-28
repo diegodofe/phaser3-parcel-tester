@@ -5,6 +5,7 @@ import {Plugin as NineSlicePlugin} from 'phaser3-nineslice'
 import Preloader from './scenes/Preloader'
 import MainScene from './scenes/MainScene'
 import UIScene from './scenes/UIScene'
+import SettingsScene from './scenes/SettingsScene'
 
 const config = {
 	type: Phaser.AUTO,
@@ -20,7 +21,7 @@ const config = {
 	plugins: {
 		global: [ NineSlicePlugin.DefaultCfg ]
 	},
-	scene: [Preloader, MainScene, UIScene]
+	scene: [Preloader, MainScene, UIScene, SettingsScene]
 }
 
 export default new Phaser.Game(config)

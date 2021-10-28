@@ -14,6 +14,9 @@ export default class Preloader extends Phaser.Scene
 		this.load.image('grey-panel', 'assets/ui/uipack_fixed/PNG/grey_panel.png')
 		this.load.image('music-on', 'assets/ui/iconpack/PNG/Black/1x/musicOn.png')
 		this.load.image('music-off', 'assets/ui/iconpack/PNG/Black/1x/musicOff.png')
+		this.load.image('save', 'assets/ui/iconpack/PNG/Black/1x/save.png')
+		this.load.image('door', 'assets/ui/iconpack/PNG/Black/1x/door.png')
+
 	}
 
 	create()
